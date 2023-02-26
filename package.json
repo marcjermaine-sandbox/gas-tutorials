@@ -1,0 +1,31 @@
+{
+  "name": "gas-tutorials",
+  "version": "1.0.0",
+  "description": "GAS tutorials",
+  "main": "index.js",
+  "scripts": {
+    "push": "cd ./src/$config_i; clasp push;",
+    "pull": "cd ./src/$config_i; clasp pull;",
+    "open": "cd ./src/$config_i; clasp open;",
+    "lint": "eslint src/ && node -e \"console.log(require('chalk').green('✅ All linter checks passed'))\" || ( node -e \"console.error(require('chalk').red('❌ Linter checks failed. Please fix the issues.'))\" && exit 1)"
+  },
+  "keywords": [
+    "Google Apps Script",
+    "Google Sheets",
+    "Google Docs"
+  ],
+  "author": "Marc Jermaine Pontiveros",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.57",
+    "eslint": "^8.35.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-googleappsscript": "^1.0.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "jsdoc-to-markdown": "^8.0.0",
+    "prettier": "^2.8.4"
+  }
+}
